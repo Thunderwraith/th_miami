@@ -64,3 +64,41 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Architectural Methodology
+
+Feature-Sliced ​​Design (FSD) is an architectural methodology for designing frontend applications. The main goal of the methodology is to make the project understandable and structured, especially in the face of regularly changing business requirements.
+
+
+### Layers
+
+
+Layers are standardized across all FSD projects. You don't have to use all the layers, but their names are important. There are currently seven of them (from top to bottom):
+
+1) App* — everything that makes the application run — routing, entry points, global styles, providers, etc.
+2) Processes (deprecated) — complex cross-page scenarios.
+3) Pages — full pages or large parts of a page with nested routing.
+4) Widgets — large self-contained chunks of functionality or interface, usually implementing an entire user scenario.
+5) Features — reusable implementations of entire product features, i.e. actions that bring business value to the user.
+6) Entities — business entities that the project works with, such as user or product.
+7) Shared* — reusable code, especially when it is separated from the specifics of the project/business, although this is not necessary.
+
+\** — these layers, App and Shared, unlike other layers, do not have slices and consist of segments directly.
+
+### Slices
+
+Next come slices, which divide the layer by subject area. You can name your slices whatever you want and create as many of them as you want. Slices help you stay organized in your project because they group closely related code.
+
+Slices cannot use other slices on the same layer, which ensures strong cohesion within a slice and weak coupling between slices.
+
+### Segments
+
+Slices, as well as the App and Shared layers, are made up of segments, and segments group code by purpose. Segment names are not fixed by the standard, but there are several common names for the most common purposes:
+
+* ui — everything related to display: UI components, date formatters, styles, etc.
+* api — interaction with the backend: query functions, data types, mappers.
+* model — data model: validation schemes, interfaces, storages and business logic.
+* lib — library code that is needed by other modules of this slice.
+* config — configuration files and feature flags.
+
+Typically these segments are sufficient for most layers, so you'll typically only create your own segments in Shared or App, but this isn't a hard and fast rule.
