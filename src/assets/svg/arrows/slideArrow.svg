@@ -1,0 +1,9 @@
+<svg id='arrow' viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4D34E3"/>
+      <stop offset="100%" stop-color="#E93470"/>
+    </linearGradient>
+  </defs>
+  <path d="M12 8L19.9057 15.9057C19.9578 15.9578 19.9578 16.0422 19.9057 16.0943L12 24" stroke="url(#gradient1)" stroke-width="1.33333"/>
+</svg>

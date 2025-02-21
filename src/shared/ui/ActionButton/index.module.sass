@@ -1,0 +1,52 @@
+.actionBtn
+  border: none
+  width: 121.28px
+  height: 51.63px
+  position: relative
+  background: transparent
+  &:hover
+    .layer1
+      background: linear-gradient(90deg, #4D34E3 8%, #E93470 91%)
+    .layer2
+      background: #000
+    &.reversed
+      .layer2
+        background: #FFF
+  @media( min-width: 1440px )
+    width: 172px
+    height: 67px
+
+  .label
+    font-size: 14px
+    color: #FFFFFF
+    font-weight: 500
+    font-family: "Urbanist", serif
+    @media( min-width: 1440px )
+      font-size: 18px
+      line-height: 18px
+
+  .layer1
+    top: 0
+    left: 0
+    z-index: 2
+    width: 92.5%
+    display: flex
+    height: 86.5%
+    position: absolute
+    background: #000
+    align-items: center
+    justify-content: center
+
+  .layer2
+    right: 0
+    bottom: 0
+    width: 94%
+    height: 86%
+    position: absolute
+    background: linear-gradient(90deg, #4D34E3 8%, #E93470 91%)
+
+.reversed
+  .label
+    color: #000
+  .layer1
+    background: #FFF

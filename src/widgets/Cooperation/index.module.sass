@@ -1,0 +1,100 @@
+.cooperationBlock
+  padding: 90px 0 15px
+  @media( min-width: 1024px )
+    padding: 118px 0 52px
+  @media( min-width: 1440px )
+    padding: 100px 0 60px
+
+.content
+  gap: 19px
+  display: flex
+  text-align: center
+  align-items: center
+  flex-direction: column
+  @media( min-width: 1024px )
+    gap: 1px
+  @media( min-width: 1440px )
+    gap: 30px
+
+.label
+  font-size: 16px
+  line-height: 22px
+  text-transform: uppercase
+  background: -webkit-linear-gradient(left, #4D34E3 0%, #E93470 100%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  letter-spacing: 1px
+
+.title
+  font-size: 36px
+  color: #131313
+  font-weight: 600
+  line-height: 49px
+  font-family: "Poppins", serif
+  @media( min-width: 1024px )
+    font-size: 46px
+    line-height: 62px
+  @media( min-width: 1440px )
+    font-size: 60px
+    line-height: 80px
+
+.contact
+  border: none
+  width: 143px
+  height: 143px
+  margin-top: 25px
+  padding-top: 44px
+  border-radius: 50%
+  background: -webkit-linear-gradient(-90deg, #4D34E3 0%, #E93470 100%)
+  font-size: 9px
+  color: #FFFFFF
+  text-transform: uppercase
+  letter-spacing: 2px
+  &:hover
+    background: -webkit-linear-gradient(90deg, #4D34E3 0%, #E93470 100%)
+  @media( min-width: 1024px )
+    width: 192px
+    height: 192px
+    margin-top: 28px
+  @media( min-width: 1440px )
+    width: 250px
+    height: 250px
+    font-size: 16px
+    padding-top: 32px
+    margin-top: unset
+    letter-spacing: 3px
+
+.contactArrow
+  margin-top: 16px
+
+.logo
+  margin: 55px 0 35px
+  @media( min-width: 1024px )
+    margin: 60px 0
+
+.socials
+  gap: 45px
+  display: flex
+  align-items: center
+  @media( min-width: 1024px )
+    gap: 109px
+    margin-top: 10px
+  @media( min-width: 1440px )
+    gap: 146px
+    margin-top: unset
+
+.socialIcon, .socialIconMobile
+  fill: #0B0B0B
+  transition: fill 0.3s ease
+  &:hover
+    fill: url(/assets/svg/gradient.svg#gradient)
+
+.socialIcon
+  display: none
+  @media( min-width: 1440px )
+    display: block
+
+.socialIconMobile
+  display: block
+  @media( min-width: 1440px )
+    display: none

@@ -1,0 +1,29 @@
+.page
+  display: flex
+  min-height: 100vh
+  flex-direction: column
+  justify-content: space-between
+
+.content
+  gap: 80px
+  display: flex
+  padding: 8px 0
+  flex-direction: column
+  @media( min-width: 1024px )
+    padding: 36px 0
+  @media( min-width: 1440px )
+    gap: 160px
+    padding: 60px 0
+
+.sliderWrapper
+  @media( min-width: 1024px )
+    margin-top: -48px
+    padding-top: 96px
+  @media( min-width: 1440px )
+    margin-top: -160px
+    padding-top: 160px
+
+.counterWrapper
+  display: none
+  @media( min-width: 1024px )
+    display: block

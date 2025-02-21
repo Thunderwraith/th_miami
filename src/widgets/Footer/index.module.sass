@@ -1,0 +1,65 @@
+.footer
+  padding: 34px 0
+  overflow: hidden
+  @media( min-width: 1024px )
+    padding: 28px 0
+    border-top: 2px solid #BBBBBB
+
+.wrapper
+  gap: 38px
+  display: flex
+  align-items: center
+  flex-direction: column-reverse
+  @media( min-width: 1024px )
+    flex-direction: row
+    justify-content: space-between
+
+.label
+  font-size: 14px
+  line-height: 21px
+  color: #ACACAC
+  @media( min-width: 1440px )
+    font-size: 18px
+    line-height: 27px
+
+.list
+  gap: 16px
+  display: flex
+  font-size: 14px
+  color: #ACACAC
+  line-height: 21px
+  position: relative
+  @media( min-width: 1440px )
+    font-size: 18px
+    line-height: 27px
+
+  &:before
+    content: ''
+    height: 2px
+    width: 1000%
+    right: -200%
+    bottom: -19px
+    position: absolute
+    background: #BBBBBB
+    @media( min-width: 1024px )
+      display: none
+
+  li:not(:last-child)
+    position: relative
+    padding-right: 16px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      width: 2px
+      height: 100%
+      background: #BBBBBB
+      
+
+  a
+    @media(hover)
+      &:hover
+        background: -webkit-linear-gradient(#4D34E3, #E93470)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent

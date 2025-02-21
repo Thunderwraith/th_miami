@@ -1,0 +1,85 @@
+.header
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 99
+  padding: 27px 0
+  position: sticky
+  transition: all .4s ease
+  @media( min-width: 1024px)
+    padding: 17px 0
+
+  &.scrolled
+    transition: all .4s ease
+    background: rgba(#181818, 1)
+
+    .list
+      color: #FFFFFF
+
+.wrapper
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.logoMobile
+  @media( min-width: 1440px)
+    display: none
+
+.logoDesktop
+  display: none
+  @media( min-width: 1440px)
+    display: block
+
+.isActive
+  pointer-events: none
+
+.burger
+  border: none
+  background: transparent
+  @media( min-width: 1024px)
+    display: none
+
+.list
+  display: none
+  @media( min-width: 1024px)
+    gap: 36px
+    display: flex
+    font-size: 18px
+    color: #04091E
+    align-items: center
+
+  .menuLink
+    &:hover
+      background: -webkit-linear-gradient(#4D34E3, #E93470)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+
+
+.mobileMenuWrapper
+  gap: 24px
+  height: 100%
+  display: flex
+  min-width: 220px
+  padding: 27px 24px
+  flex-direction: column
+
+.mobileMenu
+  gap: 16px
+  height: 100%
+  display: flex
+  font-size: 18px
+  color: #04091E
+  flex-direction: column
+
+.mobileLink
+  gap: 10px
+  display: flex
+  padding: 4px 0
+  font-size: 18px
+  line-height: 32px
+  align-items: center
+
+  svg
+    background: linear-gradient(45deg, #ff6b6b, #556270)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent

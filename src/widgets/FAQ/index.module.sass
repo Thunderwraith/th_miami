@@ -1,0 +1,102 @@
+.faqBlock
+  padding: 50px 0 66px
+  background: #181818
+  @media( min-width: 1024px )
+    padding: 90px 0 95px
+  @media( min-width: 1440px )
+    padding: 120px 0
+
+.wrapper
+  gap: 54px
+  display: flex
+  flex-direction: column
+  @media( min-width: 1024px )
+    gap: 40px
+    flex-direction: row-reverse
+    justify-content: space-between
+
+.part
+  @media( min-width: 1024px )
+    &:first-child
+      display: flex
+      flex-basis: 41.229%
+      flex-direction: column
+    &:last-child
+      flex-basis: 50%
+  @media( min-width: 1440px )
+    &:first-child
+      gap: 10px
+
+.label
+  font-size: 14px
+  line-height: 22px
+  text-transform: uppercase
+  background: -webkit-linear-gradient(left, #4D34E3 0%, #E93470 100%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  letter-spacing: 3px
+
+.title
+  font-size: 28px
+  color: #FFFFFF
+  font-weight: 600
+  line-height: 38px
+  font-family: "Poppins", serif
+  @media( min-width: 1024px )
+    font-size: 32px
+    font-weight: 500
+    line-height: 43px
+  @media( min-width: 1440px )
+    font-size: 40px
+    line-height: 50px
+
+.text
+  font-size: 12px
+  margin-top: 28px
+  line-height: 17px
+  color: #AAAAAA
+  @media( min-width: 1024px )
+    font-size: 12px
+    margin-top: 17px
+  @media( min-width: 1440px )
+    font-size: 16px
+    margin-top: 10px
+    line-height: unset
+
+.accordion
+  gap: 13px
+  display: flex
+  flex-direction: column
+  @media( min-width: 1024px )
+    gap: 20px
+
+.accordionItem
+  padding: 0
+  background: #222222
+
+  button
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 12px 10px
+    font-size: 12px
+    text-align: left
+    color: #FFFFFF
+    @media( min-width: 1024px )
+      padding: 15px
+      font-size: 16px
+    @media( min-width: 1440px )
+      padding: 20px
+      font-size: 20px
+
+    svg
+      transition: transform 0.25s cubic-bezier(0, 0, 0, 1)
+
+.content
+  font-size: 12px
+  color: #FFFFFF
+  line-height: 24px
+  padding: 12px 10px
+  @media( min-width: 1024px )
+    padding: 20px
+    font-size: 16px

@@ -1,0 +1,23 @@
+<svg width='0' height='0'>
+
+  <symbol id='contact-arrow' width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.19361 19.9485C5.86818 19.6231 5.84106 19.1123 6.11225 18.756L6.19361 18.6629L19.0499 5.80653C19.405 5.45151 19.9806 5.45151 20.3356 5.80653C20.661 6.13196 20.6881 6.64274 20.4169 6.99907L20.3356 7.09216L7.47924 19.9485C7.12422 20.3035 6.54863 20.3035 6.19361 19.9485Z" fill="white" stroke="white"/>
+    <path d="M9.34604 7.38012C8.84397 7.3812 8.43608 6.97507 8.435 6.473C8.43402 6.01658 8.76958 5.63799 9.20781 5.57211L9.34212 5.56197L19.6906 5.53968C20.1484 5.5387 20.5276 5.87619 20.592 6.3159L20.6016 6.45064L20.5802 16.8C20.5792 17.3021 20.1713 17.7082 19.6693 17.7072C19.2128 17.7062 18.8357 17.3691 18.7716 16.9306L18.7621 16.7962L18.7811 7.35976L9.34604 7.38012Z" fill="white" stroke="white"/>
+  </symbol>
+
+  <symbol id='accordion-arrow' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <polyline points="6 9 12 15 18 9" />
+  </symbol>
+
+  <symbol id='accordion-mobile-arrow' width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.95217 0.905151L4.08375 3.77357L1.21533 0.905151" stroke="white" stroke-width="0.860526" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+
+  <symbol id='readArrow' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.8935 3.40821L3.4082 11.8935" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M5.06272 3.42261C5.06272 3.42261 10.3298 1.84492 11.8922 3.40734C13.4558 4.97089 11.8787 10.2386 11.8787 10.2386" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+</svg>
