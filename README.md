@@ -83,7 +83,7 @@ Layers are standardized across all FSD projects. You don't have to use all the l
 6) Entities — business entities that the project works with, such as user or product.
 7) Shared* — reusable code, especially when it is separated from the specifics of the project/business, although this is not necessary.
 
-\** — these layers, App and Shared, unlike other layers, do not have slices and consist of segments directly.
+\* — these layers, App and Shared, unlike other layers, do not have slices and consist of segments directly.
 
 ### Slices
 
